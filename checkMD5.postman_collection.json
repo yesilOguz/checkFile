@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "f0065c37-7df3-42fa-8700-cb696283e2f1",
+		"name": "checkMD5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30321687"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/createUser?username=root&password=12345",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"createUser"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "root"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/getToken?username=root&password=12345",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getToken"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "root"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/checkMd5?token=2LGzIXnF7I0YXXKa&md5=999eb1840c209aa70a84c5cf64909e5f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"checkMd5"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "2LGzIXnF7I0YXXKa"
+						},
+						{
+							"key": "md5",
+							"value": "999eb1840c209aa70a84c5cf64909e5f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
